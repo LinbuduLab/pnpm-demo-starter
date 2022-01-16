@@ -1,0 +1,44 @@
+{
+  "name": "pnpm-demo-starter",
+  "version": "1.0.0",
+  "description": "Simple starter for simple demo",
+  "main": "index.js",
+  "scripts": {
+    "sync": "git add -A && git commit -m 'sync' && git push",
+    "dev": "tsnd --transpile-only --respawn src/index.ts",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinbuduLab/pnpm-demo-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinbuduLab/pnpm-demo-starter/issues"
+  },
+  "homepage": "https://github.com/LinbuduLab/pnpm-demo-starter#readme",
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^17.0.8",
+    "@types/tmp": "^0.2.3",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "cac": "^6.7.12",
+    "chalk": "^5.0.0",
+    "change-case": "^4.1.2",
+    "consola": "^2.15.3",
+    "debug": "^4.3.3",
+    "execa": "5.0.0",
+    "fs-extra": "^10.0.0",
+    "tmp": "^0.2.1",
+    "vitepress": "^0.21.4"
+  }
+}
